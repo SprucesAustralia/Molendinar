@@ -50,10 +50,20 @@
         .checklist-table th, .checklist-table td {
             padding: 0.75rem;
             border-bottom: 1px solid #e5e7eb;
+            vertical-align: top;
+        }
+        .checklist-table tr:last-child td {
+            border-bottom: none;
         }
         .tick {
             color: #16a34a;
             font-weight: bold;
+        }
+        .task-description {
+            font-size: 0.875rem;
+            color: #6b7280;
+            padding-left: 1rem;
+            padding-bottom: 0.75rem;
         }
     </style>
 </head>
@@ -143,6 +153,18 @@
             </div>
         </section>
         
+        <!-- Special Offer -->
+        <section class="mb-12">
+             <div class="bg-teal-50 border-l-4 border-teal-500 text-teal-900 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-2">Special Offer: 2-Week Paid Trial</h3>
+                <p class="text-lg">Experience our commitment to quality firsthand with no long-term commitment. Select any of our plans for a two-week trial period.</p>
+                <ul class="list-disc list-inside mt-4 space-y-2">
+                    <li><strong>No Strings Attached:</strong> After the two weeks, you can decide if you'd like to continue on a weekly or monthly basis.</li>
+                    <li><strong>See the Difference:</strong> It's the perfect way to witness the reliability and attention to detail our team brings to your new office.</li>
+                </ul>
+            </div>
+        </section>
+
         <!-- Detailed Service Checklist -->
         <section class="mb-12">
             <h2 class="section-title text-center">Detailed Service Checklist</h2>
@@ -157,25 +179,43 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><strong>General</strong></td><td></td><td></td><td></td></tr>
+                        <tr><td colspan="4"><strong>General</strong></td></tr>
                         <tr><td>Empty all bins & replace liners</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td></tr>
+                        <tr><td colspan="4" class="task-description">All office and kitchen bins are emptied and relined with fresh bags. Bin exteriors are wiped down as needed.</td></tr>
                         <tr><td>Spot clean entry glass & doors</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td></tr>
+                        <tr><td colspan="4" class="task-description">We remove fingerprints and smudges from main entry glass and high-touch door surfaces to maintain a professional entrance.</td></tr>
                         <tr><td>Wipe down desks & workstations</td><td class="text-center">-</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td></tr>
+                        <tr><td colspan="4" class="task-description">Surfaces are cleared of dust and wiped with a pH-neutral cleaner, focusing on creating a clean and hygienic workspace.</td></tr>
                         <tr><td>High dusting (vents, light fixtures)</td><td class="text-center">-</td><td class="text-center">-</td><td class="text-center tick">✔</td></tr>
-                        <tr><td><strong>Kitchen</strong></td><td></td><td></td><td></td></tr>
+                        <tr><td colspan="4" class="task-description">Using extension dusters, we remove accumulated dust and cobwebs from hard-to-reach places like vents and lighting.</td></tr>
+                        
+                        <tr><td colspan="4"><strong>Kitchen</strong></td></tr>
                         <tr><td>Wipe countertops & cabinet exteriors</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td></tr>
+                        <tr><td colspan="4" class="task-description">Food preparation surfaces are sanitized, and cabinet doors are wiped to remove spills and fingerprints.</td></tr>
                         <tr><td>Clean sink & polish tapware</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td></tr>
+                        <tr><td colspan="4" class="task-description">The sink is scrubbed to remove food residue and stains, and taps are polished for a streak-free shine.</td></tr>
                         <tr><td>Clean microwave interior</td><td class="text-center">-</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td></tr>
-                        <tr><td><strong>Toilets & Shower (x6)</strong></td><td></td><td></td><td></td></tr>
+                        <tr><td colspan="4" class="task-description">We remove food splatters from the inside of the microwave, leaving it clean and odor-free.</td></tr>
+
+                        <tr><td colspan="4"><strong>Toilets & Shower (x6)</strong></td></tr>
                         <tr><td>Clean & sanitize toilets and urinals</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td></tr>
+                        <tr><td colspan="4" class="task-description">Every toilet is thoroughly cleaned and disinfected inside and out, including the base and surrounding areas.</td></tr>
                         <tr><td>Clean & sanitize basins, polish tapware</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td></tr>
+                        <tr><td colspan="4" class="task-description">Basins are scrubbed and sanitized, and all chrome fixtures are polished to remove water spots.</td></tr>
                         <tr><td>Clean shower & glass screen</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td></tr>
+                        <tr><td colspan="4" class="task-description">The disabled access shower, including the glass screen and tiles, is cleaned to remove soap scum and build-up.</td></tr>
                         <tr><td>Refill consumables (client-supplied)</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td></tr>
-                        <tr><td><strong>Floors</strong></td><td></td><td></td><td></td></tr>
+                        <tr><td colspan="4" class="task-description">We will restock your client-supplied toilet paper, hand towels, and soap dispensers as required.</td></tr>
+
+                        <tr><td colspan="4"><strong>Floors</strong></td></tr>
                         <tr><td>Vacuum main traffic areas</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td></tr>
+                        <tr><td colspan="4" class="task-description">Key walkways and high-traffic floor areas are vacuumed to remove daily dust and debris.</td></tr>
                         <tr><td>Vacuum all office carpets/rugs</td><td class="text-center">-</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td></tr>
+                        <tr><td colspan="4" class="task-description">We perform a thorough vacuum of all carpeted areas, including under desks and along edges.</td></tr>
                         <tr><td>Mop all hard floors</td><td class="text-center">-</td><td class="text-center tick">✔</td><td class="text-center tick">✔</td></tr>
+                        <tr><td colspan="4" class="task-description">All hard surfaces, including kitchen and bathroom floors, are mopped using a neutral floor cleaner for a clean, non-slip finish.</td></tr>
                         <tr><td>Special floor care / spot treatment</td><td class="text-center">-</td><td class="text-center">-</td><td class="text-center tick">✔</td></tr>
+                        <tr><td colspan="4" class="task-description">We address minor, fresh spills or scuffs on carpets and hard floors to prevent staining.</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -215,3 +255,4 @@
     </div>
 </body>
 </html>
+
